@@ -1,0 +1,47 @@
+git status : to check the history
+
+git init : to innitialize the repository
+
+git add --a  : to go in stage area and rady to commit 
+git add filename_with_extention : if we modify any file we use the command and to go in stage area and rady to commit  
+
+git commit -m "add massage": used to fully commited the file present in thr Stage area
+
+git commit -a -m "add massage" : ude to skip the stage area and commit the file
+
+git log : to see all commits
+
+git rm filename_with_extention: used to remome the file from git repository
+rm -rf .git : used to delete reposirory
+
+pwd : present working directory
+
+git diff : this command used to compaire working directory to Staging area
+git diff --staged : this command used to compaire privious commit to present staging area
+
+touch file/directory_name : used to creat the file/directory inside the present repository
+
+ls : list the conttent
+
+cd : change directory
+
+###  Git File Status Lifecycle:
+
+1: initialized as git repository using : git init : command
+	[After this command those file goes in "unrtracked state"]
+
+2: Track those File using : git add --a : command
+	[This file goes in "stage state"]
+
+# if we modify any file then this file goes in "modified stage" also it is desply in "Stage state"
+
+3: To Stage this modified file we used the : git add filename_with_extention : command
+	[This modified File showes in "Stage state"]
+
+4: We can Save this All modified file in repository using : git commit -m "add_any_msg..." : command
+
+### Ignore File
+
+first create one file using : touch .gitignore : command
+1: Inside .gitignore file mention those all file we want to ignore
+
